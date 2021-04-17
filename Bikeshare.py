@@ -18,7 +18,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington). While loop is used to handle invalid inputs
     print('Welcome to this program')
     city=input("Please select your city(Chicago, New York City, Washington): ").lower()
     while city not in CITY_DATA.keys():
@@ -26,14 +26,14 @@ def get_filters():
         print('Chicago, New York City, Washington ')
         city=input("Please input your city: ").lower()
 
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, february, ... , june) While loop is used to handle invalid inputs
     print('What is the month you are intested in? You can select all, january, february, ... , june')
     month=input("Please input the month to filter data:").lower()
     while month not in MONTH_DATA:
         print('Sorry we are not able to get the month data, Please select again.')
         print('all, january, february, ... , june')
         month=input("Please input the month: ").lower()
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    # get user input for day of week (all, monday, tuesday, ... sunday). While loop is used to handle invalid inputs
     print('What is the day you are intested in? You can select all, monday, tuesday, ... sunday')
     day=input("Please input the day to filter data:").lower()
     while day not in DAY_DATA:
@@ -168,7 +168,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 def view_data(df):
-    """ Display 5 rows of data for the selected city """
+    """ Display 5 rows of data for the selected city if requested """
     row_index = 0
     answer_data = input('Do you want to view raw data? Please input yes or no \n').lower()
     while answer_data not in ['yes','no']:
