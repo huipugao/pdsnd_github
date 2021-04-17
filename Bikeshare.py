@@ -22,24 +22,18 @@ def get_filters():
     print('Welcome to this program')
     city=input("Please select your city(Chicago, New York City, Washington): ").lower()
     while city not in CITY_DATA.keys():
-        print('Sorry we are not able to get the city data, Please select one of the cities again.')
-        print('Chicago, New York City, Washington ')
-        city=input("Please input your city: ").lower()
+        city=input("Sorry we are not able to get the city data. Please input Chicago, New York City, or Washington: ").lower()
 
     # TO DO: get user input for month (all, january, february, ... , june)
     print('What is the month you are intested in? You can select all, january, february, ... , june')
     month=input("Please input the month to filter data:").lower()
     while month not in MONTH_DATA:
-        print('Sorry we are not able to get the month data, Please select again.')
-        print('all, january, february, ... , june')
-        month=input("Please input the month: ").lower()
+        month=input("Sorry we are not able to get the month data. Please input all, january, february, ... , or june: ").lower()
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     print('What is the day you are intested in? You can select all, monday, tuesday, ... sunday')
     day=input("Please input the day to filter data:").lower()
     while day not in DAY_DATA:
-        print('Sorry we are not able to get the day data, Please select again.')
-        print('all, monday, tuesday, ... sunday')
-        day=input("Please input the day: ").lower()
+        day=input("Sorry we are not able to get the day data. Please input all, monday, tuesday, ..., or sunday: ").lower()
     print('-'*40)
     return city, month, day
 
