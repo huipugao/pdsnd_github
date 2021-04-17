@@ -7,10 +7,12 @@
 Bikeshare project
 
 ### Description
-This project uses Python and Numpy, pandas libraries to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. It has an interactive environment to present statistics including popular times of travel, popular stations and trip, trip duration, and user info. 
+This project uses Python and Numpy, pandas libraries to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. It has an interactive environment to present statistics including popular times of travel, popular stations and trip, trip duration, and user info.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
